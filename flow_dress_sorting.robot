@@ -1,7 +1,6 @@
 *** Settings ***
 Resource  ./pages/welcome.robot
 Resource  ./pages/catalog.robot
-Resource  ./pages/catalog.robot
 
 *** Test Cases ***
 Sorting by price
