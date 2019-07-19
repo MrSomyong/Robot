@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="swp" tests="1" time="0.388">
+  <testsuite name="username" id="80f21275-fee3-475b-9400-15917bafdee8" timestamp="2019-07-19T07:23:21.453Z" tests="2" failures="1" errors="0" time="0.388">
+    <testcase name="Status code is 200" time="0.388" classname="Swp"/>
+    <testcase name="Your test name" time="0.388" classname="Swp">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 10">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 587af968-c06c-4ab4-8026-72a6180e93fa.]]>
+        <![CDATA[Collection name: swp.]]>
+        <![CDATA[Request name: username.]]>
+        <![CDATA[Test description: Your test name.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 10.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 10
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>
