@@ -12,3 +12,6 @@ Open
 
 Choose menu Dresses
     Click Element  //*[@id="block_top_menu"]/ul/li[2]/a
+
+Home
+    Go To ${URL}  browser=${BROWSER}
