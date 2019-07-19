@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "587af968-c06c-4ab4-8026-72a6180e93fa",
+		"name": "swp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "username",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "db9d0ad4-dcf8-400d-9c30-742f43c2c4bd",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.lenght).to.eql(10);",
+							"    pm.expect(jsonData[0].username).to.eql(\"Bret\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
